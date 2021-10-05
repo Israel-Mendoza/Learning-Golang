@@ -4,27 +4,27 @@ import "fmt"
 
 func main() {
 
-	// Integer literals can be base ten, or other bases:
+	// Integer literals can be base ten, or other bases (they're evaluated as int):
 	integerOne := 10
 	integerTwo := 0b1010110
 	integerThree := 0o75456
 	integerFour := 0xFA112C
-	fmt.Println(integerOne)
-	// 10
-	fmt.Println(integerTwo)
-	// 86
-	fmt.Println(integerThree)
-	// 31534
-	fmt.Println(integerFour)
-	// 16388396
+	fmt.Printf("%d - %T\n", integerOne, integerOne)
+	// 10 - int
+	fmt.Printf("%d - %T\n", integerTwo, integerTwo)
+	// 86 - int
+	fmt.Printf("%d - %T\n", integerThree, integerThree)
+	// 31534 - int
+	fmt.Printf("%d - %T\n", integerFour, integerFour)
+	// 16388396 - int
 
-	// Floating point literals:
+	// Floating point literals (they are evaluated as float64):
 	floatOne := 3.141598
 	floatTwo := 3.03e23
-	fmt.Println(floatOne)
-	// 3.141598
-	fmt.Println(floatTwo)
-	// 3.03e+23
+	fmt.Printf("%f - %T\n", floatOne, floatOne)
+	// 3.141598 - float64
+	fmt.Printf("%f - %T\n", floatTwo, floatTwo)
+	// 303000000000000010485760.000000 - float64
 
 	// Rune literals are surrounded by single quotes:
 	runeOne := 'a'
