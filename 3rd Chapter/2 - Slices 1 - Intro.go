@@ -25,14 +25,28 @@ func main() {
 	printSlice(sliceThree)
 	// Type: []int - Value: []
 
+	// Using an empty slice literal
+	var sliceFour = []int{}
+	printSlice(sliceFour)
+	// Type: []int - Value: []
+
 	// We can't just use == or != to compary slices.
 	// We can only compare them to nil
 	fmt.Println(sliceThree == nil)
 	// true
+	fmt.Println(sliceFour == nil)
+	// false
 
 	// The length of a nil slice is 0
 	fmt.Println(len(sliceThree))
 	// 0
+
+	// Remember: setting the slice to its zero default value is nil
+	// Using the empty slice literal is not nil.
+	fmt.Println(sliceThree == nil)
+	// true
+	fmt.Println(sliceFour == nil)
+	// false
 }
 
 func printSlice(aSlice []int) {
