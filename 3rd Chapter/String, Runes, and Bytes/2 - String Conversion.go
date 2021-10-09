@@ -35,4 +35,12 @@ func main() {
 	// [72 101 108 108 111 44 32 240 159 152 142] ([]uint8)
 	fmt.Printf("%v (%T)\n", rs, rs)
 	// [72 101 108 108 111 44 32 128526] ([]int32)
+
+	var stringFromBytes string = string(bs)
+	var stringFromRunes string = string(rs)
+	fmt.Println(stringFromBytes)
+	fmt.Println(stringFromRunes)
+	// Hello, 😎
+	// Hello, 😎
+
 }
