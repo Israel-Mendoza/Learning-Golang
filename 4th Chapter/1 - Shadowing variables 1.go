@@ -7,14 +7,17 @@ func main() {
 
 	x := 10
 
-	fmt.Printf("%T - %d\n", x, x)
+	fmt.Println(x)
+	// 10
 
 	if x > 5 {
 		// "if" scope
 		fmt.Println(x)
-		x := 5 // New "x" (shadowing previous "x")
+		// 10
+		x := 5 // Shadowing x because we're using :=
 		fmt.Println(x)
+		// 5
 	}
-
 	fmt.Println(x)
+	// 10
 }
