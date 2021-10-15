@@ -18,3 +18,15 @@ for word in words:
 # 'cow' is a short word!
 # 'smile' is exactly the right length: 5
 # 'anthropologist' is a long word! Its length is 14
+
+
+for i in range(10):
+    if i % 2 == 0:
+        print(f"{i} is even")
+    elif i % 3 == 0:
+        print(f"{i} is divisible by 3 but not 2")
+    elif i % 7 == 0:
+	    print("exit the loop!")
+	    break
+    else:
+        print(f"{i} is boring")
