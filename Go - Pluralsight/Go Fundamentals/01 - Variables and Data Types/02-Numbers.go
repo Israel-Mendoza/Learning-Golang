@@ -14,15 +14,15 @@ func main() {
 	var anInt int = 9_223_372_036_854_775_807
 
 	fmt.Printf("Type: %T, value: %v\n", a, a)
-	//Type: int8, value: 127
+	// Type: int8, value: 127
 	fmt.Printf("Type: %T, value: %v\n", b, b)
-	//Type: int16, value: 32767
+	// Type: int16, value: 32767
 	fmt.Printf("Type: %T, value: %v\n", c, c)
-	//Type: int32, value: 2147483647
+	// Type: int32, value: 2147483647
 	fmt.Printf("Type: %T, value: %v\n", d, d)
-	//Type: int64, value: 9223372036854775807
+	// Type: int64, value: 9223372036854775807
 	fmt.Printf("Type: %T, value: %v\n", anInt, anInt)
-	//Type: int, value: 9223372036854775807
+	// Type: int, value: 9223372036854775807
 
 	// Max values
 	var e uint8 = 255
@@ -33,21 +33,21 @@ func main() {
 	var aUInt uint = 18_446_744_073_709_551_615
 
 	fmt.Printf("Type: %T, value: %v\n", e, e)
-	//Type: uint8, value: 255
+	// Type: uint8, value: 255
 	fmt.Printf("Type: %T, value: %v\n", f, f)
-	//Type: uint16, value: 65535
+	// Type: uint16, value: 65535
 	fmt.Printf("Type: %T, value: %v\n", g, g)
-	//Type: uint32, value: 4294967295
+	// Type: uint32, value: 4294967295
 	fmt.Printf("Type: %T, value: %v\n", h, h)
-	//Type: uint64, value: 18446744073709551615
+	// Type: uint64, value: 18446744073709551615
 	fmt.Printf("Type: %T, value: %v\n", aUInt, aUInt)
-	//Type: uint, value: 18446744073709551615
+	// Type: uint, value: 18446744073709551615
 
 	// FLOATS
 	var aFloat32 float32 = 3.141598
 	var aFloat64 float64 = 3.141598 // Decimals are float64 by default
 	fmt.Printf("Type: %T, value: %v\n", aFloat32, aFloat32)
-	//Type: float32, value: 3.141598
+	// Type: float32, value: 3.141598
 	fmt.Printf("Type: %T, value: %v\n", aFloat64, aFloat64)
-	//Type: float64, value: 3.141598
+	// Type: float64, value: 3.141598
 }

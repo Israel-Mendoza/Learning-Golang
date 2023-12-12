@@ -8,4 +8,5 @@ func main() {
 	var anInt32 int32 = 0
 	var anInt64 int64 = int64(anInt32) // We must convert the types all the time!
 	fmt.Printf("%v\n", anInt64)
+	// 0
 }

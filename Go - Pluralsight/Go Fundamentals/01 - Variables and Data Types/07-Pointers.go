@@ -43,4 +43,11 @@ func main() {
 	*aNumberPtr = 999
 	fmt.Printf("Value: %v - Address: %v\n", aNumber, aNumberPtr)
 	// Value: 999 - Address: 0x140000a4028
+
+	// A pointer has an address too:
+	aPtrAddress := &anIntPtr
+	fmt.Printf("The address of a pointer (%T): %v\n", aPtrAddress, aPtrAddress)
+	// The address of a pointer (**int): 0x140000aa018
+	fmt.Printf("Chaining de-referencing: %v\n", **aPtrAddress)
+	// Chaining de-referencing: 3000
 }
